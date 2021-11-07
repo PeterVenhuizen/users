@@ -1,0 +1,42 @@
+/* table styles */
+table {
+    margin: 1em 0;
+    /* table-layout: fixed; */
+    width: 100%;
+}
+th {
+    text-align: left;
+    padding: 0 5px;
+}
+th:first-of-type,
+td:first-of-type {
+    padding-left: 0px;
+}
+th:last-of-type,
+td:last-of-type {
+    padding-right: 0px;
+}
+td {
+    color: var(--text-gray);
+    padding: 0.25em 5px;
+    font-size: 0.9em;
+}
+td.used-by {
+    word-wrap: break-word;
+}
+td.controls {
+    text-align: right;
+}
+td.controls > button {
+    margin-left: 0.5em;
+}
+
+/* other stuff */
+.yes-no {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0.5em;
+}
+.yes-no > .btn-medium {
+    margin-left: 0;
+}

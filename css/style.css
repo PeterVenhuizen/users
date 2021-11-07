@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+@import 'layout.css'; /* grid layout */
+@import 'nav.css'; /* nav */
+@import 'defaults.css';
+@import 'modal.css';
+
+/* 404 */
+.four-o-four p {
+    color: var(--text-gray);
+    margin-top: 0.5em;
+}
+
+/* PROFILE */
+/* .account-settings {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 700px;
+} */
+.account-settings h2, h5 {
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.setting-group {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+}
+.setting-group span {
+    color: var(--text-gray);
+    font-size: 0.9em;
+}
+.setting-group button {
+    align-self: center;
+}
+
+.form-elements {
+    display: none;
+}

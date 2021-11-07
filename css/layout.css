@@ -1,0 +1,52 @@
+#app {
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+        'header'
+        'main';
+}
+#app > header {
+    grid-area: header;
+}
+#app > main {
+    grid-area: main;
+    height: 100%;
+    display: flex;
+    background-color: white;
+    padding: 1em;
+}
+
+/* "hovering" floating container */
+.center-hover {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 0.5em;
+}
+
+.center-column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 700px;
+}
+
+@media all and (min-width: 700px) {
+    #app > main {
+        align-items: flex-start;
+        justify-content: center;
+    }
+    #app .center-hover {
+        border-radius: 15px;
+        padding: 1.5em;
+        box-shadow: 0px 14px 80px var(--transparent-gray);
+        max-width: 450px;
+    }
+    #app .center-column {
+        /* align-items: center; */
+        justify-content: initial;
+    }
+}
